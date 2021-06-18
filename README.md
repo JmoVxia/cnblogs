@@ -10,28 +10,26 @@
 8. 将 [页脚 HTML 代码](https://github.com/JmoVxia/cnblogs/blob/main/页脚 HTML 代码) 复制到 `页脚Html代码` 代码框内
 9. 根据自身情况修改`页脚Html代码`中的代码
 
-<script type="text/javascript" src="https://blog-static.cnblogs.com/files/blogs/689249/progress.js"></script>
-<script type="text/javascript">
 
-    //博主名称 可不改，默认取博客园提供的
-    var nickName = null;
-    //slogan
-    var slogan = '路漫漫其修远兮，吾将上下而求索';
-    //icon
-    var icon = "https://gitee.com/JmoVxia/Photos/raw/master/0eM37g.JPG";
-    //默认博客背景图片
-    var defaultPic="https://img2018.cnblogs.com/blog/1138447/201904/1138447-20190426121949417-1115592219.jpg";
-    //icon(浏览器标题栏上的)
-    var iconB="https://img2018.cnblogs.com/blog/1138447/201909/1138447-20190911161817172-1737762696.png";
-    //友情链接地址
-    var friendLink="https://www.cnblogs.com/JmoVxia";
-    //关于地址
-    var aboutMe="https://www.cnblogs.com/JmoVxia/p/14900187.html";
-    //Github地址,假如博客username与Github username相同，不用改。
-    //如 cnblogs.com/username github.com/username 这样就不用改
-    var myGayhubUrl = null;
-</script>
-<script type="text/javascript">
+```java
+//博主名称 可不改，默认取博客园提供的
+var nickName = null;
+//slogan
+var slogan = '路漫漫其修远兮，吾将上下而求索';
+//icon
+var icon = "https://gitee.com/JmoVxia/Photos/raw/master/0eM37g.JPG";
+//默认博客背景图片
+var defaultPic="https://img2018.cnblogs.com/blog/1138447/201904/1138447-20190426121949417-1115592219.jpg";
+//icon(浏览器标题栏上的)
+var iconB="https://img2018.cnblogs.com/blog/1138447/201909/1138447-20190911161817172-1737762696.png";
+//友情链接地址
+var friendLink="https://www.cnblogs.com/JmoVxia";
+//关于地址
+var aboutMe="https://www.cnblogs.com/JmoVxia/p/14900187.html";
+//Github地址,假如博客username与Github username相同，不用改。
+//如 cnblogs.com/username github.com/username 这样就不用改
+var myGayhubUrl = null;
+```
 
 ## 博客示例
 
