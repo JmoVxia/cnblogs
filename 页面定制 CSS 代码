@@ -1,0 +1,1213 @@
+/**---------- 原有样式修改 --------*/
+#sideBar{
+display: none;
+}
+#mainContent{
+width: 100%;
+box-shadow: 0 0 0;
+border-radius: 0px;
+opacity: 0;
+transition:0.5s;
+margin-top:40px;
+}
+#main{
+width: 50%;
+background-color: white;
+/*max-width: 700px;*/
+}
+@media screen and (max-width: 1000px) {
+#main {width: 100%;}
+}
+body{
+background-image: none;
+background-color: white;
+font-family: Menlo,Bitstream Vera Sans Mono,DejaVu Sans Mono,Monaco,Consolas,monospace !important;
+line-height: 1.8;
+}
+#cnblogs_post_body{
+font-size: 16px;
+}
+#green_channel{
+display: none;
+}
+#post_next_prev{
+display: none;
+}
+.forFlow img{
+margin-top: 0;
+}
+#cnblogs_post_body img {
+max-width: 100%;
+}
+
+/** 去除广告 */
+#cb_post_title_url{
+display: none;
+}
+#cnblogs_c1{
+display: none;
+}
+#cnblogs_c2{
+display: none;
+}
+#ad_t2{
+display: none;
+}
+#kb_block{
+display:none
+}
+#under_post_news{
+display:none
+}
+#header{
+display:none
+}
+#BlogPostCategory{
+display: none;
+}
+#comment_nav{
+display: none;
+}
+.postDesc{
+border-bottom:none;
+}
+#author_profile_follow{
+display: none;
+}
+
+/** 自定义样式 */
+/* 加载条 */
+#myProgressBar{
+width: 15%;
+height: 2px;
+background-color: #eb5055;
+position: fixed;
+top: 0;
+left: 0;
+z-index: 999;
+}
+#nprogress {
+pointer-events: none;
+}
+
+#nprogress .bar {
+background: #eb5055;
+
+position: fixed;
+z-index: 1031;
+top: 0;
+left: 0;
+
+width: 100%;
+height: 2px;
+}
+#nprogress .peg {
+display: block;
+position: absolute;
+right: 0px;
+width: 100px;
+height: 100%;
+box-shadow: 0 0 10px #eb5055, 0 0 5px #eb5055;
+opacity: 1.0;
+
+-webkit-transform: rotate(3deg) translate(0px, -4px);
+-ms-transform: rotate(3deg) translate(0px, -4px);
+transform: rotate(3deg) translate(0px, -4px);
+}
+#nprogress .spinner {
+display: block;
+position: fixed;
+z-index: 1031;
+top: 15px;
+right: 15px;
+}
+
+#nprogress .spinner-icon {
+width: 18px;
+height: 18px;
+box-sizing: border-box;
+
+border: solid 2px transparent;
+border-top-color: #eb5055;
+border-left-color: #eb5055;
+border-radius: 50%;
+
+-webkit-animation: nprogress-spinner 400ms linear infinite;
+animation: nprogress-spinner 400ms linear infinite;
+}
+.nprogress-custom-parent {
+overflow: hidden;
+position: relative;
+}
+.nprogress-custom-parent #nprogress .spinner,
+.nprogress-custom-parent #nprogress .bar {
+position: absolute;
+}
+
+@-webkit-keyframes nprogress-spinner {
+0%   { -webkit-transform: rotate(0deg); }
+100% { -webkit-transform: rotate(360deg); }
+}
+@keyframes nprogress-spinner {
+0%   { transform: rotate(0deg); }
+100% { transform: rotate(360deg); }
+}
+
+
+/** 导航栏 */
+#mynavbar{
+width: 100%;
+height: 70px;
+position: fixed;
+display: block;
+top: 0px;
+z-index: 100;
+background-color: white;
+transition:0.5s ease-in-out;
+box-shadow: 0 1px 5px rgba(0,0,0,.1);
+}
+#mynavbar_menu{
+display: inline-block;
+width: auto;
+position: relative;
+float: right;
+text-align: right;
+line-height: 68px;
+}
+#mynavbar_menu a{
+padding: 0 15px;
+font-size: 14px;
+outline: 0;
+color: #313131;
+text-decoration: none;
+}
+#mynavbar_menu a:hover{
+color: #eb5055 !important;
+}
+
+/** 头部 */
+#myheader{
+background-color: #2175bc!important;
+margin-top:70px;
+position: relative;
+width: 100%;
+height: 300px;
+}
+#myheader_bg{
+width:100%;
+height:300px;
+background-position: center;
+background-size: cover;
+-webkit-filter: blur(3px);
+-moz-filter: blur(3px);
+filter: blur(3px);
+position: absolute;
+}
+#myheader_cover{
+position: relative;
+margin-top: 70px;
+width: 100%;
+height: 300px;
+background-color: rgba(0,0,0,.5);
+box-shadow: 0 1px 5px rgba(0,0,0,.3);
+}
+#mypost_title{
+position: relative;
+top: 105pt;
+margin: 0 auto;
+padding: 30px 25px 20px;
+max-width: 700px;
+color: white;
+transition:0.5s;
+opacity: 0;
+}
+#mypost_title_e{
+margin: 0;
+padding: 5px 0 15px;
+}
+#mypost_title_e a{
+border: 1px solid #6fa3ef;
+border-radius: 15px;
+background: #6fa3ef;
+color: #fff;display: inline-block;
+margin: 4px 8px 0 0;
+padding: 0 15px;
+letter-spacing: 0;
+font-weight: 600;
+font-size: 13px;outline: 0;text-decoration: none;
+transition: 0.5s;
+}
+#mypost_title_e a:before{
+content: "# "
+}
+#mypost_title_e a:hover{
+background-color: white;
+border: 1px solid white;
+color:black;
+}
+#mypost_title_f a{
+color: white;
+}
+#mypost_title_f a:hover{
+text-decoration:none;
+}
+
+/** 右侧导航 */
+#right_meun{
+position: fixed;
+top: 100px;
+left: 74%;
+display: none;
+text-align: left;
+border-left: 1px solid #ddd;
+font-size: 12px;
+}
+#right_meun li{
+list-style: none!important;
+}
+#right_meun a{
+display: inline-table;
+margin-left: 5px;
+white-space: nowrap;
+text-decoration: none;
+color: #313131;
+outline: 0;
+}
+#right_meun a:hover{
+color: #eb5055;
+}
+#right_meun>li::before {
+position: relative;
+top: 0;
+left: -4px;
+display: inline-block;
+width: 7px;
+height: 7px;
+content: '';
+border-radius: 50%;
+background-color: #eb5055;
+}
+/* 底部导航 */
+#post-bottom-bar{
+position: fixed;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 2;
+height: 3pc;
+border-top: 1px solid #e0e0e0;
+background-color: #fff;
+margin: 0;
+padding: 0;
+transition: 0.5s ease-in-out;
+}
+#post-bottom-bar a{
+text-decoration: none!important;
+}
+.post-bottom-bar .bottom-bar-inner{
+margin: 0 auto;
+padding: 0 10px;
+max-width: 900px;
+}
+.bottom-bar-items{
+margin: 0 0 0 10px;
+color: #313131;
+font-size: 14px !important;
+line-height: 3pc;float: left;
+}
+.post-bottom-bar{
+margin: 0 0 0 10px;
+color: #313131;
+font-size: 14px;
+line-height: 3pc;
+}
+.post-bottom-bar .social-share .bottom-bar-item {
+padding: 4px;
+}
+.post-bottom-bar .bottom-bar-item.bottom-bar-facebook a {
+background-color: #4267b2;
+color: #fff;
+}
+.post-bottom-bar .social-share .bottom-bar-item a {
+padding: 2px 10px;
+border-radius: 15px;
+}
+.post-bottom-bar .bottom-bar-item a {
+margin: 0;
+padding: 9pt;
+border: 0;
+background: 0 0;
+color: #313131;
+font-size: 14px;
+line-height: 3pc;
+cursor: pointer;
+}
+.post-bottom-bar .bottom-bar-item.bottom-bar-twitter a {
+background-color: #1b95e0;
+color: #fff;
+}
+.post-bottom-bar .bottom-bar-item.bottom-bar-qrcode a {
+background-color: #5f5f5f;
+color: #fff;
+}
+.bottom-bar-item a:hover{
+color: #eb5055;
+}
+
+
+/** MarkDown样式调整 */
+
+@font-face {
+font-family: octicons-link;
+src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.cnblogs-markdown {
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+line-height: 1.5;
+color: #24292e;
+font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+font-size: 16px;
+line-height: 1.5;
+word-wrap: break-word;
+}
+
+.cnblogs-markdown .pl-c {
+color: #6a737d;
+}
+
+.cnblogs-markdown .pl-c1,
+.cnblogs-markdown .pl-s .pl-v {
+color: #005cc5;
+}
+
+.cnblogs-markdown .pl-e,
+.cnblogs-markdown .pl-en {
+color: #6f42c1;
+}
+
+.cnblogs-markdown .pl-smi,
+.cnblogs-markdown .pl-s .pl-s1 {
+color: #24292e;
+}
+
+.cnblogs-markdown .pl-ent {
+color: #22863a;
+}
+
+.cnblogs-markdown .pl-k {
+color: #d73a49;
+}
+
+.cnblogs-markdown .pl-s,
+.cnblogs-markdown .pl-pds,
+.cnblogs-markdown .pl-s .pl-pse .pl-s1,
+.cnblogs-markdown .pl-sr,
+.cnblogs-markdown .pl-sr .pl-cce,
+.cnblogs-markdown .pl-sr .pl-sre,
+.cnblogs-markdown .pl-sr .pl-sra {
+color: #032f62;
+}
+
+.cnblogs-markdown .pl-v,
+.cnblogs-markdown .pl-smw {
+color: #e36209;
+}
+
+.cnblogs-markdown .pl-bu {
+color: #b31d28;
+}
+
+.cnblogs-markdown .pl-ii {
+color: #fafbfc;
+background-color: #b31d28;
+}
+
+.cnblogs-markdown .pl-c2 {
+color: #fafbfc;
+background-color: #d73a49;
+}
+
+.cnblogs-markdown .pl-c2::before {
+content: "^M";
+}
+
+.cnblogs-markdown .pl-sr .pl-cce {
+font-weight: bold;
+color: #22863a;
+}
+
+.cnblogs-markdown .pl-ml {
+color: #735c0f;
+}
+
+.cnblogs-markdown .pl-mh,
+.cnblogs-markdown .pl-mh .pl-en,
+.cnblogs-markdown .pl-ms {
+font-weight: bold;
+color: #005cc5;
+}
+
+.cnblogs-markdown .pl-mi {
+font-style: italic;
+color: #24292e;
+}
+
+.cnblogs-markdown .pl-mb {
+font-weight: bold;
+color: #24292e;
+}
+
+.cnblogs-markdown .pl-md {
+color: #b31d28;
+background-color: #ffeef0;
+}
+
+.cnblogs-markdown .pl-mi1 {
+color: #22863a;
+background-color: #f0fff4;
+}
+
+.cnblogs-markdown .pl-mc {
+color: #e36209;
+background-color: #ffebda;
+}
+
+.cnblogs-markdown .pl-mi2 {
+color: #f6f8fa;
+background-color: #005cc5;
+}
+
+.cnblogs-markdown .pl-mdr {
+font-weight: bold;
+color: #6f42c1;
+}
+
+.cnblogs-markdown .pl-ba {
+color: #586069;
+}
+
+.cnblogs-markdown .pl-sg {
+color: #959da5;
+}
+
+.cnblogs-markdown .pl-corl {
+text-decoration: underline;
+color: #032f62;
+}
+
+.cnblogs-markdown .octicon {
+display: inline-block;
+vertical-align: text-top;
+fill: currentColor;
+}
+
+.cnblogs-markdown a {
+background-color: transparent;
+text-decoration: none !important;
+}
+
+.cnblogs-markdown a:active,
+.cnblogs-markdown a:hover {
+outline-width: 0;
+text-decoration: underline !important;
+}
+
+.cnblogs-markdown strong {
+font-weight: inherit;
+}
+
+.cnblogs-markdown strong {
+font-weight: bolder;
+}
+
+.cnblogs-markdown h1 {
+font-size: 2em;
+margin: 0.67em 0;
+}
+
+.cnblogs-markdown img {
+border-style: none;
+}
+
+.cnblogs-markdown code,.cnblogs-post-body code {
+font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace !important;
+font-size: 12px!important;
+line-height: 20px;
+background-color: #f6f8fa!important;
+border: 1px solid #f6f8fa!important;
+padding: 0 5px!important;
+border-radius: 3px!important;
+line-height: 1.8;
+margin: 1px 5px;
+vertical-align: middle;
+display: inline-block
+}
+
+.cnblogs-markdown kbd {
+display: inline-block;
+padding: 3px 5px;
+font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+line-height: 10px;
+color: #444d56;
+vertical-align: middle;
+background-color: #fafbfc;
+border: solid 1px;
+border-bottom-color: #c6cbd1;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+
+.cnblogs-markdown code,
+.cnblogs-markdown pre {
+font-family: monospace, monospace;
+font-size: 1em;
+}
+
+.cnblogs-markdown hr {
+box-sizing: content-box;
+height: 0;
+overflow: visible;
+}
+
+.cnblogs-markdown input {
+font: inherit;
+margin: 0;
+}
+
+.cnblogs-markdown input {
+overflow: visible;
+}
+
+.cnblogs-markdown [type="checkbox"] {
+box-sizing: border-box;
+padding: 0;
+}
+
+.cnblogs-markdown * {
+box-sizing: border-box;
+}
+
+.cnblogs-markdown input {
+font-family: inherit;
+font-size: inherit;
+line-height: inherit;
+}
+
+.cnblogs-markdown a {
+color: #0366d6;
+text-decoration: none;
+}
+
+.cnblogs-markdown a:hover {
+text-decoration: underline;
+}
+
+.cnblogs-markdown strong {
+font-weight: 600;
+}
+
+.cnblogs-markdown hr {
+height: 0;
+margin: 15px 0;
+overflow: hidden;
+background: transparent;
+border: 0;
+border-bottom: 1px solid #dfe2e5;
+}
+
+.cnblogs-markdown hr::before {
+display: table;
+content: "";
+}
+
+.cnblogs-markdown hr::after {
+display: table;
+clear: both;
+content: "";
+}
+
+.cnblogs-markdown table {
+border-spacing: 0;
+border-collapse: collapse;
+border: 0px !important;
+overflow-x: hidden !important;
+}
+
+.cnblogs-markdown td,
+.cnblogs-markdown th {
+padding: 0;
+}
+
+.cnblogs-markdown h1,
+.cnblogs-markdown h2,
+.cnblogs-markdown h3,
+.cnblogs-markdown h4,
+.cnblogs-markdown h5,
+.cnblogs-markdown h6 {
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.cnblogs-markdown h1 {
+font-size: 32px;
+font-weight: 600;
+}
+
+.cnblogs-markdown h2 {
+font-size: 24px;
+font-weight: 600;
+}
+
+.cnblogs-markdown h3 {
+font-size: 20px;
+font-weight: 600;
+}
+
+.cnblogs-markdown h4 {
+font-size: 16px;
+font-weight: 600;
+color: black;
+background-color: white;
+}
+
+.cnblogs-markdown h5 {
+font-size: 14px;
+font-weight: 600;
+}
+
+.cnblogs-markdown h6 {
+font-size: 12px;
+font-weight: 600;
+}
+
+.cnblogs-markdown p {
+margin-top: 0;
+margin-bottom: 10px;
+}
+
+.cnblogs-markdown blockquote {
+margin: 0;
+}
+
+.cnblogs-markdown ul,
+.cnblogs-markdown ol {
+padding-left: 0;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.cnblogs-markdown ol ol,
+.cnblogs-markdown ul ol {
+list-style-type: lower-roman;
+}
+
+.cnblogs-markdown ul ul ol,
+.cnblogs-markdown ul ol ol,
+.cnblogs-markdown ol ul ol,
+.cnblogs-markdown ol ol ol {
+list-style-type: lower-alpha;
+}
+
+.cnblogs-markdown dd {
+margin-left: 0;
+}
+
+.cnblogs-markdown code {
+font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+font-size: 12px;
+}
+
+.cnblogs-markdown pre {
+margin-top: 0;
+margin-bottom: 0;
+font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+font-size: 12px;
+}
+
+.cnblogs-markdown .octicon {
+vertical-align: text-bottom;
+}
+
+.cnblogs-markdown .pl-0 {
+padding-left: 0 !important;
+}
+
+.cnblogs-markdown .pl-1 {
+padding-left: 4px !important;
+}
+
+.cnblogs-markdown .pl-2 {
+padding-left: 8px !important;
+}
+
+.cnblogs-markdown .pl-3 {
+padding-left: 16px !important;
+}
+
+.cnblogs-markdown .pl-4 {
+padding-left: 24px !important;
+}
+
+.cnblogs-markdown .pl-5 {
+padding-left: 32px !important;
+}
+
+.cnblogs-markdown .pl-6 {
+padding-left: 40px !important;
+}
+
+.cnblogs-markdown::before {
+display: table;
+content: "";
+}
+
+.cnblogs-markdown::after {
+display: table;
+clear: both;
+content: "";
+}
+
+.cnblogs-markdown>*:first-child {
+margin-top: 0 !important;
+}
+
+.cnblogs-markdown>*:last-child {
+margin-bottom: 0 !important;
+}
+
+.cnblogs-markdown a:not([href]) {
+color: inherit;
+text-decoration: none;
+}
+
+.cnblogs-markdown .anchor {
+float: left;
+padding-right: 4px;
+margin-left: -20px;
+line-height: 1;
+}
+
+.cnblogs-markdown .anchor:focus {
+outline: none;
+}
+
+.cnblogs-markdown p,
+.cnblogs-markdown blockquote,
+.cnblogs-markdown ul,
+.cnblogs-markdown ol,
+.cnblogs-markdown dl,
+.cnblogs-markdown table,
+.cnblogs-markdown pre {
+margin-top: 0;
+margin-bottom: 16px;
+}
+
+.cnblogs-markdown hr {
+height: 0.25em;
+padding: 0;
+margin: 24px 0;
+background-color: #e1e4e8;
+border: 0;
+}
+
+.cnblogs-markdown blockquote {
+padding: 0 1em;
+color: #6a737d;
+border-left: 0.25em solid #dfe2e5;
+}
+
+.cnblogs-markdown blockquote>:first-child {
+margin-top: 0;
+}
+
+.cnblogs-markdown blockquote>:last-child {
+margin-bottom: 0;
+}
+
+.cnblogs-markdown kbd {
+display: inline-block;
+padding: 3px 5px;
+font-size: 11px;
+line-height: 10px;
+color: #444d56;
+vertical-align: middle;
+background-color: #fafbfc;
+border: solid 1px #c6cbd1;
+border-bottom-color: #959da5;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #959da5;
+}
+
+.cnblogs-markdown h1,
+.cnblogs-markdown h2,
+.cnblogs-markdown h3,
+.cnblogs-markdown h4,
+.cnblogs-markdown h5,
+.cnblogs-markdown h6 {
+margin-top: 24px;
+margin-bottom: 16px;
+font-weight: 600;
+line-height: 1.25;
+}
+
+.cnblogs-markdown h1 .octicon-link,
+.cnblogs-markdown h2 .octicon-link,
+.cnblogs-markdown h3 .octicon-link,
+.cnblogs-markdown h4 .octicon-link,
+.cnblogs-markdown h5 .octicon-link,
+.cnblogs-markdown h6 .octicon-link {
+color: #1b1f23;
+vertical-align: middle;
+visibility: hidden;
+}
+
+.cnblogs-markdown h1:hover .anchor,
+.cnblogs-markdown h2:hover .anchor,
+.cnblogs-markdown h3:hover .anchor,
+.cnblogs-markdown h4:hover .anchor,
+.cnblogs-markdown h5:hover .anchor,
+.cnblogs-markdown h6:hover .anchor {
+text-decoration: none;
+}
+
+.cnblogs-markdown h1:hover .anchor .octicon-link,
+.cnblogs-markdown h2:hover .anchor .octicon-link,
+.cnblogs-markdown h3:hover .anchor .octicon-link,
+.cnblogs-markdown h4:hover .anchor .octicon-link,
+.cnblogs-markdown h5:hover .anchor .octicon-link,
+.cnblogs-markdown h6:hover .anchor .octicon-link {
+visibility: visible;
+}
+
+.cnblogs-markdown h1 {
+padding-bottom: 0.3em;
+font-size: 2em;
+border-bottom: 1px solid #eaecef;
+}
+
+.cnblogs-markdown h2 {
+padding-bottom: 0.3em;
+font-size: 1.5em;
+border-bottom: 1px solid #eaecef;
+}
+
+.cnblogs-markdown h3 {
+font-size: 1.25em;
+}
+
+.cnblogs-markdown h4 {
+font-size: 1em;
+}
+
+.cnblogs-markdown h5 {
+font-size: 0.875em;
+}
+
+.cnblogs-markdown h6 {
+font-size: 0.85em;
+color: #6a737d;
+}
+
+.cnblogs-markdown ul,
+.cnblogs-markdown ol {
+padding-left: 2em;
+}
+
+.cnblogs-markdown ul ul,
+.cnblogs-markdown ul ol,
+.cnblogs-markdown ol ol,
+.cnblogs-markdown ol ul {
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.cnblogs-markdown li {
+word-wrap: break-all;
+}
+
+.cnblogs-markdown li>p {
+margin-top: 16px;
+}
+
+.cnblogs-markdown li+li {
+margin-top: 0.25em;
+}
+
+.cnblogs-markdown dl {
+padding: 0;
+}
+
+.cnblogs-markdown dl dt {
+padding: 0;
+margin-top: 16px;
+font-size: 1em;
+font-style: italic;
+font-weight: 600;
+}
+
+.cnblogs-markdown dl dd {
+padding: 0 16px;
+margin-bottom: 16px;
+}
+
+.cnblogs-markdown table {
+display: block;
+width: 100%;
+overflow: auto;
+}
+
+.cnblogs-markdown table th {
+font-weight: 600;
+}
+
+.cnblogs-markdown table th,
+.cnblogs-markdown table td {
+padding: 6px 13px;
+border: 1px solid #dfe2e5;
+}
+
+.cnblogs-markdown table tr {
+background-color: #fff;
+border-top: 1px solid #c6cbd1;
+}
+
+.cnblogs-markdown table tr:nth-child(2n) {
+background-color: #f6f8fa;
+}
+
+.cnblogs-markdown img {
+max-width: 100%;
+box-sizing: content-box;
+background-color: #fff;
+}
+
+.cnblogs-markdown img[align=right] {
+padding-left: 20px;
+}
+
+.cnblogs-markdown img[align=left] {
+padding-right: 20px;
+}
+
+.cnblogs-markdown code {
+padding: 0.2em 0.4em;
+margin: 0;
+font-size: 85%;
+background-color: rgba(27,31,35,0.05);
+border-radius: 3px;
+}
+
+.cnblogs-markdown pre {
+word-wrap: normal;
+}
+
+.cnblogs-markdown pre>code {
+padding: 0;
+margin: 0;
+font-size: 100%;
+word-break: normal;
+white-space: pre;
+background: transparent;
+border: 0;
+}
+
+.cnblogs-markdown .highlight {
+margin-bottom: 16px;
+}
+
+.cnblogs-markdown .highlight pre {
+margin-bottom: 0;
+word-break: normal;
+}
+
+.cnblogs-markdown .highlight pre,
+.cnblogs-markdown pre {
+padding: 16px;
+overflow: auto;
+font-size: 85%;
+line-height: 1.45;
+background-color: #f6f8fa;
+border-radius: 3px;
+}
+
+.cnblogs-markdown pre code {
+display: inline;
+max-width: auto;
+padding: 0;
+margin: 0;
+overflow: visible;
+line-height: inherit;
+word-wrap: normal;
+background-color: transparent;
+border: 0;
+}
+
+.cnblogs-markdown .full-commit .btn-outline:not(:disabled):hover {
+color: #005cc5;
+border-color: #005cc5;
+}
+
+.cnblogs-markdown kbd {
+display: inline-block;
+padding: 3px 5px;
+font: 11px "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+line-height: 10px;
+color: #444d56;
+vertical-align: middle;
+background-color: #fafbfc;
+border: solid 1px #d1d5da;
+border-bottom-color: #c6cbd1;
+border-radius: 3px;
+box-shadow: inset 0 -1px 0 #c6cbd1;
+}
+
+.cnblogs-markdown :checked+.radio-label {
+position: relative;
+z-index: 1;
+border-color: #0366d6;
+}
+
+.cnblogs-markdown .task-list-item {
+list-style-type: none;
+}
+
+.cnblogs-markdown .task-list-item+.task-list-item {
+margin-top: 3px;
+}
+
+.cnblogs-markdown .task-list-item input {
+margin: 0 0.2em 0.25em -1.6em;
+vertical-align: middle;
+}
+
+.cnblogs-markdown hr {
+border-bottom-color: #eee;
+}
+
+.cnblogs-markdown .hljs,.cnblogs-post-body .hljs {
+font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace !important;
+font-size: 12px!important;
+line-height: 1.5!important;
+padding: 5px!important
+}
+
+/** 复制粘贴 */
+.cnblogs-markdown pre {
+position: relative;
+}
+.cnblogs-markdown pre > span {
+position: absolute;
+top: 0;
+right: 0;
+border-radius: 2px;
+padding: 0 10px;
+font-size: 12px;
+background: rgba(0, 0, 0, 0.4);
+color: #fff;
+cursor: pointer;
+display:none;
+}
+.cnblogs-markdown pre:hover > span {
+display:block;
+}
+.cnblogs-markdown pre > .copyed {
+background: #67c23a;
+}
+
+
+.postBody blockquote {
+background: none;
+}
+
+/** 更改浏览器滚动条和选中字体背景颜色 */
+::selection {
+background-color: #eb5055;
+color: #fff;
+}
+::-webkit-scrollbar {
+width: 6px;
+height: 6px;
+}
+::-webkit-scrollbar-thumb {
+min-height: 28px;
+background-color: #c2c2c2;
+background-clip: padding-box;
+}
+::-webkit-scrollbar-track-piece {
+background-color: #fff;
+}
+*, :after, :before {
+box-sizing: border-box;
+}
+
+
+/** 首页文章条显示优化 */
+.day{
+border-radius: 10px;
+box-shadow: 0 0 20px 2px rgba(0,0,0,.1);
+margin-top: 40px;
+transition: 0.3s;
+}
+.day:hover{
+box-shadow: 0 1px 2px rgba(0,0,0,.1);
+}
+.dayTitle {
+display: none;
+}
+
+
+/** 优化评论区样式 */
+.feedbackItem{
+background-color: ghostwhite;
+border-radius: 10px;
+padding: 20px;
+margin-top: 20px;
+border: 0px;
+}
+.comment_textarea{
+padding: 15px;
+border-radius: 10px;
+outline: 0;
+resize: none;
+overflow: hidden;
+width: 100%;
+}
+.comment_btn {
+border: 1px solid #f7f7f7;
+border-radius: 30px;
+background-color: #f7f7f7;
+font-size: 13px;
+cursor: pointer;
+height: 32px;
+padding: 0 20px;
+position: absolute;
+right:6%;
+bottom: 38px;
+width: auto;
+}
+.comment_btn:hover {
+border: 1px solid #eb5055;
+background-color: white;
+color: #eb5055;
+transition-duration: .4s;
+}
+.feedback_area_title{
+display: none;
+}
+.commentbox_main{
+margin-top: 20px;
+}
+
+
+
+#MySignature{　　
+border:solid 1px #E5E5E5;
+padding:10px;
+background:#E5EEF7;
+padding-left:0px;}
+
+#MySignature div{
+line-height: 20px;
+}
