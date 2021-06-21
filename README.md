@@ -3,12 +3,13 @@
 1. 首先你得有个[博客](https://www.cnblogs.com/JmoVxia/)
 2. 打开 [博客后台管理](https://i.cnblogs.com/Configure.aspx)
 3. 申请`JS`权限
-4. 上传[clipboard.js](https://github.com/JmoVxia/cnblogs/blob/main/clipboard.js)[cp.js](https://github.com/JmoVxia/cnblogs/blob/main/cp.js)[progress.js](https://github.com/JmoVxia/cnblogs/blob/main/progress.js)到文件
+4. 上传[clipboard.js](https://github.com/JmoVxia/cnblogs/blob/main/clipboard.js)、[cp.js](https://github.com/JmoVxia/cnblogs/blob/main/cp.js)、[progress.js](https://github.com/JmoVxia/cnblogs/blob/main/progress.js)到文件
 5. 在博客皮肤选项卡中将博客皮肤设置为： [BlueSky](http://www.cnblogs.com/SkinUser.aspx?SkinName=BlueSky)
 6. 将 [页面定制CSS代码](https://github.com/JmoVxia/cnblogs/blob/main/页面定制CSS代码) 复制到 `页面定制CSS代码` 代码框内
 7. 将 [页首HTML代码](https://github.com/JmoVxia/cnblogs/blob/main/页首HTML代码)复制到 `页首Html代码` 代码框内
 8. 将 [页脚HTML代码](https://github.com/JmoVxia/cnblogs/blob/main/页脚HTML代码) 复制到 `页脚Html代码` 代码框内
-9. 根据自身情况修改`页脚Html代码`中的代码
+9. 修改`clipboard.js`、`cp.js`、`progress.js`文件链接指向自己上传的文件地址
+10. 根据自身情况修改`页脚Html代码`中的代码
 
 
 ```java
